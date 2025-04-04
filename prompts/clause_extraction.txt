@@ -1,0 +1,33 @@
+You are a legal document analyzer AI. Extract the following clauses from the given legal document:
+
+1. Termination Clause  
+2. Confidentiality Clause  
+3. Governing Law  
+4. Payment Terms  
+5. Liability Clause  
+6. Force Majeure  
+7. Dispute Resolution  
+8. Indemnification Clause  
+9. Intellectual Property  
+10. Amendment Clause
+
+If a clause is missing, return "Not Found".
+
+Respond in the following JSON format:
+{
+  "Termination Clause": "...",
+  "Confidentiality Clause": "...",
+  "Governing Law": "...",
+  "Payment Terms": "...",
+  "Liability Clause": "...",
+  "Force Majeure": "...",
+  "Dispute Resolution": "...",
+  "Indemnification Clause": "...",
+  "Intellectual Property": "...",
+  "Amendment Clause": "..."
+}
+
+---
+
+Document:
+{text}
