@@ -95,3 +95,53 @@
 2025-04-04 11:01:00,381 [WARNING] CropBox missing from /Page, defaulting to MediaBox
 2025-04-04 11:01:00,381 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
 2025-04-04 11:01:00,382 [INFO] ✅ Text chunked into 37 chunks with size=1000, overlap=200
+2025-04-04 12:02:05,136 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-04 12:02:05,299 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,301 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,302 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,303 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,307 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,308 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,309 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,310 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,312 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,313 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:05,314 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,654 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,655 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,655 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,655 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,655 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,655 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,656 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,656 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,656 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,656 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,657 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:06,657 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-04 12:02:06,657 [ERROR] ❌ Error during classification: name 'os' is not defined
+2025-04-04 12:02:25,042 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-04 12:02:25,158 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,160 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,161 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,162 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,163 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,164 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,166 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,168 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,169 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,169 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:25,170 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,483 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,484 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,485 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,485 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,485 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,485 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:02:26,485 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-04 12:02:26,485 [ERROR] ❌ Error during classification: name 'os' is not defined
