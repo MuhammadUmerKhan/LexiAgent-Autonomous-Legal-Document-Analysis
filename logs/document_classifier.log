@@ -1,0 +1,83 @@
+2025-04-04 12:04:14,372 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-04 12:04:14,486 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,488 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,489 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,490 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,492 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,495 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,497 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,499 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,500 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:14,501 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,809 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,809 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,809 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,809 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,810 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,810 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,810 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,810 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,811 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,811 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,811 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:15,811 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-04 12:04:15,812 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-04 12:04:15,812 [ERROR] ❌ LLM Query Error: name 'model_name' is not defined
+2025-04-04 12:04:15,812 [ERROR] ❌ Error during classification: 'str' object is not callable
+2025-04-04 12:04:57,993 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-04 12:04:58,112 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,114 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,115 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,116 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,117 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,119 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,121 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,123 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,124 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,125 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:58,126 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,444 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,444 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,445 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,445 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,445 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,445 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,445 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,446 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,446 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,446 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,446 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:04:59,447 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-04 12:04:59,447 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-04 12:04:59,447 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-04 12:05:01,391 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 12:05:01,406 [INFO] ✅ Classification result: Others
+2025-04-04 12:06:49,327 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-04 12:06:49,439 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,441 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,442 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,444 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,446 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,447 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,449 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,450 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,451 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,452 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:49,452 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,740 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,740 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,740 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,741 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,742 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,742 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-04 12:06:50,742 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-04 12:06:50,742 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-04 12:06:50,742 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-04 12:06:52,040 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 12:06:52,049 [INFO] ✅ Classification result: Research Paper
