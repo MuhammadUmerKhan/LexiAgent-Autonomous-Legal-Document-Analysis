@@ -27,6 +27,7 @@ try:
     CHUNK_SIZE = 1000
     CHUNK_OVERLAP = 200
     MODEL_NAME = "qwen-2.5-32b"
+    MAX_TEXT_LIMIT = 3000
 except Exception as e:
     logging.error(f"❌ Error loading Constants: {str(e)}")
 
