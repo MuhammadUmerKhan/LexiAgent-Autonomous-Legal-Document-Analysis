@@ -10,11 +10,12 @@ import warnings
 warnings.filterwarnings(action="ignore")
 
 # Setup logging
+os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("logs/document_loader.log"),
+        logging.FileHandler("logs/document_classifier.log"),
         logging.StreamHandler()
     ]
 )
