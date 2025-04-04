@@ -1,10 +1,9 @@
 import os
 import logging
 from typing import Optional
-from utils.utils import configure_llm
-from langchain.schema import HumanMessage
+from utils.utils import configure_llm, load_prompt_template
 from document_loader import load_document
-from utils.utils import load_prompt_template
+from config import config as CONFIG
 from pathlib import Path
 
 # Setup logging
@@ -22,7 +21,7 @@ def classify_document(text: str, prompt_path: str) -> Optional[str]:
     try:
         # Load prompt template
         prompt_template = load_prompt_template(prompt_path)
-        prompt = prompt_template.replace("{text}", text.strip()[:3000])  # Limit size for efficiency
+        prompt = prompt_template.replace("{text}", text.strip()[:CONFIG.MAX_TEXT_LIMIT])  # Limit size for efficiency
 
         logging.info("🔍 Sending document to LLM for classification...")
 
@@ -30,7 +29,7 @@ def classify_document(text: str, prompt_path: str) -> Optional[str]:
         llm = configure_llm()
 
         # Get LLM response
-        response = llm([HumanMessage(content=prompt)])
+        response = llm.invoke(prompt)
         result = response.content.strip()
 
         logging.info(f"✅ Classification result: {result}")
@@ -50,4 +49,4 @@ if __name__ == "__main__":
         if result:
             print(f"📄 Document Type: {result}")
     except Exception as e:
-        logging.exception(f"Failed to classify document: {e}")
+        logging.exception(f"❌ Failed to classify document: {e}")
