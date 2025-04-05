@@ -18,9 +18,9 @@ logging.basicConfig(
     ]
 )
 
-def summarize_contract(clauses: Dict[str, str], prompt_path: str) -> Optional[Dict]:
+def summarize_contract(clauses: Dict[str, str]) -> Optional[Dict]:
     try:
-        prompt_template = load_prompt_template(prompt_path)
+        prompt_template = load_prompt_template(CONFIG.DOC_SUMMARIZER_PATH)
         clause_json = json.dumps(clauses, indent=2)
         prompt = prompt_template.replace("{clauses}", clause_json)
 
@@ -67,14 +67,14 @@ def get_doc_summary(file_path):
     
     return final_summary.content.strip()
 
-def get_summary(file_path: str, clause_prompt_path: str, summary_prompt_path: str):
+def get_summary(file_path: str):
     
     extracted = extract_clauses(file_path)
     parsed = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
     merged_clauses = merge_clause_chunks(parsed)
 
-    clause_summary = summarize_contract(merged_clauses, summary_prompt_path)
-    doc_summary = get_doc_summary(file_path=file_path)
+    clause_summary = summarize_contract(merged_clauses)
+    doc_summary = get_doc_summary(file_path)
     
     return json.dumps(clause_summary, indent=2), doc_summary
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     clause_prompt_path = "./prompts/clause_extraction.txt"
     summary_prompt_path = "./prompts/summarization.txt"
 
-    clause_summary, doc_summary = get_summary(file_path, clause_prompt_path, summary_prompt_path)
+    clause_summary, doc_summary = get_summary(file_path)
     
     print("\n📝 Clause Summary Output:\n", json.dumps(clause_summary, indent=2))
     print("\n📝 Document Summary Output:\n", doc_summary)
