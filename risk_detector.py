@@ -34,8 +34,8 @@ def analyze_clause_risks(clauses: Dict[str, str], prompt_path: str) -> Optional[
             json_end = raw_output.rfind('}') + 1
             json_text = raw_output[json_start:json_end]
             parsed = json.loads(json_text)
-            logging.info("✅ Risk analysis JSON extracted successfully.")
-            return parsed
+            logging.info("✅ Risk analysis complete.")
+            return parsed, raw_output
         except Exception as json_err:
             logging.warning("⚠️ Failed to parse JSON manually. Returning raw response.")
             return {
@@ -57,7 +57,8 @@ if __name__ == "__main__":
     risk_prompt_path = "./prompts/risk_analysis.txt"
 
     extracted = extract_clauses(file_path, clause_extract_prompt_path)
-    parsed_results = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
-    merged_clauses = merge_clause_chunks(parsed_results)
+    parsed_result = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
+    merged_clauses = merge_clause_chunks(parsed_result)
     
-    print("\n🛡️ Risk Detection Output:\n", json.dumps(merged_clauses, indent=2))
+    risks = analyze_clause_risks(merged_clauses, risk_prompt_path)
+    print("\n🛡️ Risk Detection Output:\n", json.dumps(risks, indent=2))
