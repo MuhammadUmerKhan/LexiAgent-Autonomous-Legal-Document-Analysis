@@ -48,21 +48,19 @@ def analyze_clause_risks(clauses: Dict[str, str], prompt_path: str) -> Optional[
         logging.error(f"❌ Risk detection failed: {e}")
         return None
 
-def get_clause_risks(file_path: str, clause_extract_prompt_path: str, risk_prompt_path: str):
+def get_clause_risks(file_path: str):
     
-    extracted = extract_clauses(file_path, clause_extract_prompt_path)
+    extracted = extract_clauses(file_path)
     parsed_result = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
     merged_clauses = merge_clause_chunks(parsed_result)
     
-    risks, raw_output = analyze_clause_risks(merged_clauses, risk_prompt_path)    
+    risks, raw_output = analyze_clause_risks(merged_clauses, CONFIG.RISK_ANALYZER_PATH)    
     return json.dumps(risks, indent=2)
 
 # Sample Test
 if __name__ == "__main__":
 
     file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-    clause_extract_prompt_path = "./prompts/clause_extraction.txt"
-    risk_prompt_path = "./prompts/risk_analysis.txt"
 
-    risks = get_clause_risks(file_path, clause_extract_prompt_path, risk_prompt_path)
+    risks = get_clause_risks(file_path)
     print("\n🛡️ Risk Detection Output:\n", risks)
