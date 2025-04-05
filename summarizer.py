@@ -67,18 +67,24 @@ def get_doc_summary(file_path):
     
     return final_summary.content.strip()
 
+def get_summary(file_path: str, clause_prompt_path: str, summary_prompt_path: str):
+    
+    extracted = extract_clauses(file_path, clause_prompt_path)
+    parsed = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
+    merged_clauses = merge_clause_chunks(parsed)
+
+    clause_summary = summarize_contract(merged_clauses, summary_prompt_path)
+    doc_summary = get_doc_summary(file_path=file_path)
+    
+    return json.dumps(clause_summary, indent=2), doc_summary
+
 if __name__ == "__main__":
 
     file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
     clause_prompt_path = "./prompts/clause_extraction.txt"
     summary_prompt_path = "./prompts/summarization.txt"
 
-    extracted = extract_clauses(file_path, clause_prompt_path)
-    parsed = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
-    merged_clauses = merge_clause_chunks(parsed)
-
-    clause_summary = summarize_contract(merged_clauses, summary_prompt_path)
-    print("\n📝 Clause Summary Output:\n", json.dumps(clause_summary, indent=2))
+    clause_summary, doc_summary = get_summary(file_path, clause_prompt_path, summary_prompt_path)
     
-    doc_summary = get_doc_summary(file_path=file_path)
+    print("\n📝 Clause Summary Output:\n", json.dumps(clause_summary, indent=2))
     print("\n📝 Document Summary Output:\n", doc_summary)
