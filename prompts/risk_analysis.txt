@@ -1,0 +1,24 @@
+You are a legal contract analysis expert.
+
+Below is a set of legal clauses extracted from a document.
+
+Your task:
+1. Identify any missing clauses that should be present in a standard legal agreement.
+2. Detect vague or risky wording in the existing clauses.
+3. Provide clear improvement suggestions for each risky clause.
+
+Respond **only** with the JSON in this format:
+
+{
+  "ambiguous_clauses": {
+    "<Clause Name>": "<Why it's vague or risky>",
+    ...
+  },
+  "suggestions": {
+    "<Clause Name>": "<How to improve or what to add>",
+    ...
+  }
+}
+
+Clauses:
+{clauses}
