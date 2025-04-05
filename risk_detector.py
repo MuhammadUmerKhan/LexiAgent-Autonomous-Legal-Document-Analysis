@@ -56,22 +56,8 @@ if __name__ == "__main__":
     clause_extract_prompt_path = "./prompts/clause_extraction.txt"
     risk_prompt_path = "./prompts/risk_analysis.txt"
 
-    # Step 1: Extract Clauses
-    results = extract_clauses(file_path, clause_extract_prompt_path)
+    extracted = extract_clauses(file_path, clause_extract_prompt_path)
+    parsed_results = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
+    merged_clauses = merge_clause_chunks(parsed_results)
     
-    parsed_results = []
-    for idx, clause_text in enumerate(results):
-        print(f"\n🔹 Chunk {idx+1} Clauses (Raw):\n{clause_text}")
-        parsed = parse_json_safely(clause_text, idx)
-        if parsed:
-            parsed_results.append(parsed)
-            
-    # Step 2: Merge Clause Chunks
-    if parsed_results:
-        merged_clauses = merge_clause_chunks(parsed_results)
-        final_output = json.dumps(merged_clauses, indent=2)
-        print("\n📌 Final Merged Clauses:\n", final_output)
-
-        # Step 3: Analyze Risk
-        risks = analyze_clause_risks(merged_clauses, risk_prompt_path)
-        print("\n🛡️ Risk Detection Output:\n", json.dumps(risks, indent=2))
+    print("\n🛡️ Risk Detection Output:\n", json.dumps(merged_clauses, indent=2))
