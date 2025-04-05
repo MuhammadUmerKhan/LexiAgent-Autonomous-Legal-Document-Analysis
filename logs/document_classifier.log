@@ -1945,3 +1945,7 @@ NameError: name 'load_document' is not defined
 2025-04-05 16:02:33,970 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2025-04-05 16:02:33,971 [INFO] Retrying request to /openai/v1/chat/completions in 3.000000 seconds
 2025-04-05 16:02:38,786 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 20:01:56,805 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 20:01:56,813 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 20:03:32,114 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 20:03:32,114 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
