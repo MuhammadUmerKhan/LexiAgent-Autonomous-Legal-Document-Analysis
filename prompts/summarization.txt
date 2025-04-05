@@ -1,0 +1,20 @@
+You are a legal assistant AI.
+
+Below are clauses extracted from a legal agreement.
+
+Please:
+1. Write a short plain English summary of the entire contract.
+2. Then summarize each clause briefly.
+3. If a clause has a value of "Not Found", you must completely ignore it. Do not generate anything for it.
+
+Format your output as valid JSON like this:
+{
+  "overall_summary": "...",
+  "clause_summaries": {
+    "<Clause Name>: "<summary>",
+    ...
+  }
+}
+
+Clauses:
+{clauses}
