@@ -29,12 +29,12 @@ def extract_clauses_from_chunk(chunk: str, prompt_template: str, llm) -> Optiona
         logging.error(f"❌ Error in extracting clauses from chunk: {e}")
         return None
 
-def extract_clauses(file_path: str, prompt_path: str, chunk_size=CONFIG.CHUNK_SIZE, chunk_overlap=CONFIG.CHUNK_OVERLAP) -> List[str]:
+def extract_clauses(file_path: str) -> str:
     try:
         logging.info(f"📂 Loading and chunking document: {file_path}")
-        _, chunks = load_and_chunk(file_path, chunk_size, chunk_overlap)
+        _, chunks = load_and_chunk(file_path)
         
-        prompt_template = load_prompt_template(prompt_path)
+        prompt_template = load_prompt_template(CONFIG.CLAUSE_EXTRACTION_PROMPT_PATH)
         llm = configure_llm()
         
         all_extracted_clauses = []
@@ -79,9 +79,9 @@ def parse_json_safely(json_string: str, chunk_index: int) -> Optional[Dict]:
             logging.error(f"❌ jsonfix also failed for chunk {chunk_index+1}: {e}")
             return None
 
-def get_clause_extracted(file_path: str, clause_prompt_path: str):
+def get_clause_extracted(file_path: str):
     
-    extracted = extract_clauses(file_path, clause_prompt_path)
+    extracted = extract_clauses(file_path)
     parsed_results = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
     merged_clauses = merge_clause_chunks(parsed_results)
     
@@ -90,8 +90,6 @@ def get_clause_extracted(file_path: str, clause_prompt_path: str):
 # Sample Test
 if __name__ == "__main__":
     file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-    prompt_path = "./prompts/clause_extraction.txt"
-    
-    merged_clauses = get_clause_extracted(file_path, prompt_path)
+    merged_clauses = get_clause_extracted(file_path)
     
     print("\n📌 Final Merged Clauses:\n", merged_clauses)
