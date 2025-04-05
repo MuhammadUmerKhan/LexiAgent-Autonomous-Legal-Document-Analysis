@@ -97,5 +97,5 @@ if __name__ == "__main__":
             parsed_results.append(parsed)
 
     if parsed_results:
-        final_output = merge_clause_chunks(parsed_results)
-        print("\n📌 Final Merged Clauses:\n", json.dumps(final_output, indent=2))
+        final_output = json.dumps(merge_clause_chunks(parsed_results), indent=2)
+        print("\n📌 Final Merged Clauses:\n", final_output)
