@@ -1653,3 +1653,295 @@ NameError: name 'load_document' is not defined
 2025-04-05 11:50:11,714 [INFO] 🤖 Querying LLM: qwen-2.5-32b
 2025-04-05 11:50:14,354 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-05 11:50:15,915 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:47:31,601 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:47:31,614 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,617 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,618 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,620 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,622 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,624 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,625 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,626 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,627 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,629 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:31,629 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,777 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,777 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,777 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,777 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,777 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,778 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,778 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,778 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,778 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,779 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,779 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:47:32,779 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-05 15:47:32,781 [INFO] ✅ Text chunked into 37 chunks with size=1000, overlap=200
+2025-04-05 15:47:48,055 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:47:53,287 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:47:53,508 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:47:53,509 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 15:47:53,509 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:47:53,835 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 15:47:53,835 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:47:56,176 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:47:56,186 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 15:47:56,186 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:47:57,813 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:47:57,814 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 15:47:57,815 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:47:59,758 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:47:59,760 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 15:47:59,760 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:01,402 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:01,403 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 15:48:01,403 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:02,526 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:02,527 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 15:48:17,385 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:48:22,696 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,698 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,699 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,700 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,701 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,703 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,704 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,707 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,708 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,708 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:22,709 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,937 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,937 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,937 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,938 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,938 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,938 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,938 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,938 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,939 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:48:23,939 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-05 15:48:23,947 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-05 15:48:23,947 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:48:25,259 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:25,271 [INFO] ✅ Classification result: Research Paper
+2025-04-05 15:48:36,196 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:48:41,263 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:48:41,494 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:48:41,495 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 15:48:41,496 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:48:41,690 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 15:48:41,690 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:43,589 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:43,598 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 15:48:43,598 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:45,330 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:45,332 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 15:48:45,332 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:47,383 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:47,385 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 15:48:47,385 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:49,121 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:49,123 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 15:48:49,123 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:48:50,348 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:50,350 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 15:48:50,358 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:48:50,442 [INFO] 📝 Sending clauses to LLM for summarization...
+2025-04-05 15:48:52,378 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:52,380 [INFO] ✅ Summarization complete.
+2025-04-05 15:48:52,706 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:48:52,707 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 15:48:52,707 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:48:55,160 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:55,163 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:48:57,515 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:48:59,363 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:36,035 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:51:41,157 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:51:41,333 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:51:41,333 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 15:51:41,334 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:51:41,525 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 15:51:41,526 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:51:43,305 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:43,315 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 15:51:43,315 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:51:44,944 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:44,946 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 15:51:44,947 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:51:46,892 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:46,894 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 15:51:46,894 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:51:48,531 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:48,535 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 15:51:48,536 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:51:49,631 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:51:49,633 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 15:56:04,140 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:56:09,240 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,241 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,242 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,243 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,244 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,245 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,246 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,247 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,248 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,248 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:09,249 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,492 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,492 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,493 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,494 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,494 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,494 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,494 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:56:10,494 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-05 15:56:10,495 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-05 15:56:10,495 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:56:12,013 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:56:12,023 [INFO] ✅ Classification result: Research Paper
+2025-04-05 15:59:32,801 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:59:38,518 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,519 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,520 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,521 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,522 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,523 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,525 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,526 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,527 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,528 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:38,528 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,757 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,757 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,757 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,757 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,758 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,758 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,758 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,758 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,758 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,759 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,759 [WARNING] CropBox missing from /Page, defaulting to MediaBox
+2025-04-05 15:59:39,759 [INFO] ✅ PDF loaded successfully: ./data/attention paper.pdf
+2025-04-05 15:59:39,759 [INFO] 🔍 Sending document to LLM for classification...
+2025-04-05 15:59:39,759 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:59:41,118 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:59:41,129 [INFO] ✅ Classification result: Research Paper
+2025-04-05 15:59:48,684 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 15:59:53,926 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:59:54,165 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 15:59:54,166 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 15:59:54,166 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 15:59:54,431 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 15:59:54,431 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:59:57,708 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:59:57,722 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 15:59:57,722 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 15:59:59,453 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 15:59:59,455 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 15:59:59,455 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:01,498 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:01,500 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 16:00:01,500 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:03,234 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:03,235 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 16:00:03,236 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:04,464 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:04,465 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 16:00:04,473 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:00:04,570 [INFO] 🛡️ Sending clauses to LLM for risk analysis...
+2025-04-05 16:00:07,023 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:07,025 [INFO] ✅ Risk analysis complete.
+2025-04-05 16:00:33,729 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 16:00:39,474 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:00:39,918 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:00:39,919 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 16:00:39,919 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:00:40,167 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 16:00:40,167 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:41,762 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:41,768 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 16:00:41,768 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:43,383 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:43,387 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 16:00:43,391 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:45,431 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:45,434 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 16:00:45,434 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:47,070 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:47,071 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 16:00:47,072 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:00:48,188 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:48,189 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 16:00:48,190 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:00:48,269 [INFO] 🛡️ Sending clauses to LLM for risk analysis...
+2025-04-05 16:00:50,554 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:00:50,555 [INFO] ✅ Risk analysis complete.
+2025-04-05 16:01:44,081 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 16:01:49,278 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:01:49,447 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:01:49,448 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 16:01:49,448 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:01:49,629 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 16:01:49,629 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:01:51,372 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:01:51,384 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 16:01:51,384 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:01:53,016 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:01:53,017 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 16:01:53,018 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:01:54,963 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:01:54,966 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 16:01:54,967 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:01:56,614 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:01:56,615 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 16:01:56,616 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:01:57,720 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:01:57,722 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 16:01:57,723 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:01:57,810 [INFO] 🛡️ Sending clauses to LLM for risk analysis...
+2025-04-05 16:02:00,096 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:00,097 [INFO] ✅ Risk analysis complete.
+2025-04-05 16:02:09,633 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-05 16:02:16,247 [INFO] 📂 Loading and chunking document: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:02:16,623 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:02:16,623 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 16:02:16,624 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:02:16,802 [INFO] 📄 Processing chunk 1/5...
+2025-04-05 16:02:16,802 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:02:19,639 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:19,646 [INFO] 📄 Processing chunk 2/5...
+2025-04-05 16:02:19,646 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:02:21,375 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:21,386 [INFO] 📄 Processing chunk 3/5...
+2025-04-05 16:02:21,386 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:02:23,429 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:23,431 [INFO] 📄 Processing chunk 4/5...
+2025-04-05 16:02:23,431 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:02:25,061 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:25,062 [INFO] 📄 Processing chunk 5/5...
+2025-04-05 16:02:25,062 [INFO] 🔹 Sending chunk to LLM for clause extraction...
+2025-04-05 16:02:26,187 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:26,191 [INFO] ✅ All chunks processed for clause extraction.
+2025-04-05 16:02:26,192 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:02:26,325 [INFO] 📝 Sending clauses to LLM for summarization...
+2025-04-05 16:02:28,435 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:28,437 [INFO] ✅ Summarization complete.
+2025-04-05 16:02:28,885 [INFO] ✅ PDF loaded successfully: ./data/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-05 16:02:28,885 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-05 16:02:28,886 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:02:31,207 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:31,209 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-05 16:02:33,561 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 16:02:33,970 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-05 16:02:33,971 [INFO] Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-04-05 16:02:38,786 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
