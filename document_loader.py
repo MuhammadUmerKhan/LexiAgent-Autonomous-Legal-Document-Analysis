@@ -71,7 +71,7 @@ def load_document(file_path: str) -> str:
         logging.exception(f"❌ Error loading document: {file_path}")
         raise
 
-def chunk_text(text: str, chunk_size: int = None, chunk_overlap: int = None) -> List[str]:
+def chunk_text(text: str, chunk_size: int, chunk_overlap: int) -> List[str]:
     try:
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
@@ -85,12 +85,10 @@ def chunk_text(text: str, chunk_size: int = None, chunk_overlap: int = None) -> 
         logging.error("❌ Error during text chunking.")
         raise
 
-def load_and_chunk(
-            file_path: str, chunk_size: int = CONFIG.CHUNK_SIZE, chunk_overlap: int = CONFIG.CHUNK_OVERLAP
-                    ) -> Tuple[str, List[str]]:
+def load_and_chunk(file_path: str) -> str:
     try:
         full_text = load_document(file_path)
-        chunks = chunk_text(full_text, chunk_size, chunk_overlap)
+        chunks = chunk_text(full_text, CONFIG.CHUNK_SIZE, CONFIG.CHUNK_OVERLAP)
         return full_text, chunks
     except Exception as e:
         logging.exception(f"❌ Failed to load and chunk file: {file_path}")
@@ -99,7 +97,7 @@ def load_and_chunk(
 # Example Usage (for testing)
 if __name__ == "__main__":
     try:
-        file_path = "./data/attention paper.pdf"  # Replace with your test file
+        file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"  # Replace with your test file
     except FileExistsError as f:
         print("❌ Error File Path:", str(f))
     full_text, chunks = load_and_chunk(file_path)
