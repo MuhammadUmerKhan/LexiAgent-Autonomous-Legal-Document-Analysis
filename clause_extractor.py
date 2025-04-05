@@ -81,21 +81,11 @@ def parse_json_safely(json_string: str, chunk_index: int) -> Optional[Dict]:
 
 # Sample Test
 if __name__ == "__main__":
-    sample_file = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
+    file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
     prompt_path = "./prompts/clause_extraction.txt"
 
-    results = extract_clauses(
-        file_path=sample_file,
-        prompt_path=prompt_path
-    )
-
-    parsed_results = []
-    for idx, clause_text in enumerate(results):
-        print(f"\n🔹 Chunk {idx+1} Clauses (Raw):\n{clause_text}")
-        parsed = parse_json_safely(clause_text, idx)
-        if parsed:
-            parsed_results.append(parsed)
-
-    if parsed_results:
-        final_output = json.dumps(merge_clause_chunks(parsed_results), indent=2)
-        print("\n📌 Final Merged Clauses:\n", final_output)
+    extracted = extract_clauses(file_path, prompt_path)
+    parsed_results = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
+    merged_clauses = merge_clause_chunks(parsed_results)
+    
+    print("\n📌 Final Merged Clauses:\n", json.dumps(merged_clauses, indent=2))
