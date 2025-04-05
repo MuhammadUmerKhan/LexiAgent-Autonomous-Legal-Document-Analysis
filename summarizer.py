@@ -81,9 +81,6 @@ def get_summary(file_path: str):
 if __name__ == "__main__":
 
     file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-    clause_prompt_path = "./prompts/clause_extraction.txt"
-    summary_prompt_path = "./prompts/summarization.txt"
-
     clause_summary, doc_summary = get_summary(file_path)
     
     print("\n📝 Clause Summary Output:\n", json.dumps(clause_summary, indent=2))
