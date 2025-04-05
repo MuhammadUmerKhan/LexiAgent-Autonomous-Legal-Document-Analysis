@@ -44,7 +44,7 @@ def summarize_contract(clauses: Dict[str, str], prompt_path: str) -> Optional[Di
         return None
 
 def get_doc_summary(file_path):
-    doc_chunks = load_and_chunk(file_path, CONFIG.CHUNK_SIZE, CONFIG.CHUNK_OVERLAP)
+    doc_chunks = load_and_chunk(file_path)
     chunk_summaries = []
     for i, chunk in enumerate(doc_chunks):
         prompt = f"""
@@ -69,7 +69,7 @@ def get_doc_summary(file_path):
 
 def get_summary(file_path: str, clause_prompt_path: str, summary_prompt_path: str):
     
-    extracted = extract_clauses(file_path, clause_prompt_path)
+    extracted = extract_clauses(file_path)
     parsed = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
     merged_clauses = merge_clause_chunks(parsed)
 
