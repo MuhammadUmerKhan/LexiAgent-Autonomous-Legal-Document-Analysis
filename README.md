@@ -260,6 +260,9 @@ Open your browser to `http://localhost:8501` to use LexiAgent.
 2. Select "Document Analyzer" to get a full analysis.
 3. Switch to "AI Assistant" to query, e.g., "Summarize the confidentiality clause."
 
+## 📽️ Live Demo:
+- [Click Here](https://lexiagent-ai-powered-autonomous-legal-document-analyst.streamlit.app/?embed_options=dark_theme)
+
 ## 🤝 Contributing
 
 Contribute by forking the repo, creating a branch, and submitting a pull request. Discuss major changes via issues.
