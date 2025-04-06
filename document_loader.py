@@ -96,11 +96,8 @@ def load_and_chunk(file_path: str) -> str:
 
 # Example Usage (for testing)
 if __name__ == "__main__":
-    try:
-        file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"  # Replace with your test file
-    except FileExistsError as f:
-        print("❌ Error File Path:", str(f))
-    full_text, chunks = load_and_chunk(file_path)
+    
+    full_text, chunks = load_and_chunk(CONFIG.FILE_PATH)
     print(f"Document Length: {len(full_text)} characters")
     print(f"Chunks: {len(chunks)}")
     print("First Chunk:\n", chunks[0])
