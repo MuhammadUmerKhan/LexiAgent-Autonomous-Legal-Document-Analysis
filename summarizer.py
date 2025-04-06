@@ -4,7 +4,6 @@ from utils.utils import configure_llm, load_prompt_template
 from clause_extractor import parse_json_safely
 from clause_extractor import extract_clauses, merge_clause_chunks, parse_json_safely
 from document_loader import load_and_chunk
-from json_fix import fix_it
 from config import config as CONFIG
 
 # Setup logging
@@ -24,7 +23,7 @@ def summarize_contract(clauses: Dict[str, str]) -> Optional[Dict]:
         clause_json = json.dumps(clauses, indent=2)
         prompt = prompt_template.replace("{clauses}", clause_json)
 
-        llm = configure_llm()
+        llm = configure_llm(MODEL_NAME="meta-llama/llama-4-scout-17b-16e-instruct")
         logging.info("📝 Sending clauses to LLM for summarization...")
         response = llm.invoke(prompt)
         raw_output = str(response.content if hasattr(response, "content") else response)
