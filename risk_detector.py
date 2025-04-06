@@ -22,7 +22,7 @@ def analyze_clause_risks(clauses: Dict[str, str], prompt_path: str) -> Optional[
         clause_json = json.dumps(clauses, indent=2)
         prompt = prompt_template.replace("{clauses}", clause_json)
 
-        llm = configure_llm()
+        llm = configure_llm(MODEL_NAME="meta-llama/llama-4-scout-17b-16e-instruct")
         logging.info("🛡️ Sending clauses to LLM for risk analysis...")
         response = llm.invoke(prompt)
 
