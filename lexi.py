@@ -1,11 +1,8 @@
 import streamlit as st
-import os
-import logging
+import os, logging
 from pdf_agent import build_graph
 from utils import utils
 from chat_agent import stream_chat_response
-from streamlit.runtime.scriptrunner import get_script_run_ctx
-from streamlit.runtime.uploaded_file_manager import UploadedFile
 
 # Setup
 st.set_page_config(page_title="LexiAgent: Legal Document Assistant", page_icon="📄", layout="wide")
@@ -245,16 +242,7 @@ def show_chatbot():
             try:
                 with st.spinner("⚙️ LexiAgent is analyzing your document..."):
                     response = stream_chat_response(user_input, file_path)
-                    st.markdown(
-                        f"""
-                        <div style="background-color: #fffaf0; padding: 15px 20px; border-radius: 10px; border-left: 5px solid #FF6B00;">
-                            <div style="color: #333; font-size: 1.05em; line-height: 1.6;">
-                                {response}
-                            </div>
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                    )
+                    st.write(response)
                     st.session_state.messages.append({"role": "assistant", "content": response})
                     utils.print_qa(show_chatbot, user_input, response)
 
