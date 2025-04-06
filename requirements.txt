@@ -9,4 +9,3 @@ langchain-core
 json-fix
 pdfplumber
 python-docx
-docx
