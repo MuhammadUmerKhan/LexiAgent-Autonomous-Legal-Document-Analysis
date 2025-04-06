@@ -1,6 +1,4 @@
-import os
-import logging
-import json
+import os, logging, json
 from typing import Dict, Optional, List
 from collections import defaultdict
 from utils.utils import configure_llm, load_prompt_template
@@ -35,7 +33,7 @@ def extract_clauses(file_path: str) -> str:
         _, chunks = load_and_chunk(file_path)
         
         prompt_template = load_prompt_template(CONFIG.CLAUSE_EXTRACTION_PROMPT_PATH)
-        llm = configure_llm()
+        llm = configure_llm(MODEL_NAME="qwen-2.5-32b")
         
         all_extracted_clauses = []
         for i, chunk in enumerate(chunks):
