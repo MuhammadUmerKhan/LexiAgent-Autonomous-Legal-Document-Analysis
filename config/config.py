@@ -34,7 +34,7 @@ try:
     # Constants
     CHUNK_SIZE = int(1000)
     CHUNK_OVERLAP = int(200)
-    MODEL_NAME = "qwen-2.5-32b"
+    # MODEL_NAME = ["qwen-2.5-32b", "meta-llama/llama-4-maverick-17b-128e-instruct"]
     MAX_TEXT_LIMIT = int(3000)
 except Exception as e:
     logging.error(f"❌ Error loading Constants: {str(e)}")
