@@ -466,3 +466,61 @@ FileNotFoundError: ❌ File not found: prompts/clause_extraction.txt
 2025-04-05 20:39:04,702 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-05 20:39:06,555 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-05 20:39:06,558 [INFO] Document and clauses summarized
+2025-04-06 10:55:55,555 [INFO] ✅ Configuration Loaded Successfully.
+2025-04-06 10:56:27,030 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:27,031 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-06 10:56:27,032 [INFO] Loaded and chunked temp/Example-One-Way-Non-Disclosure-Agreement.pdf into 5 chunks
+2025-04-06 10:56:27,343 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:27,344 [ERROR] ❌ File not found: prompts/document_classification.txt
+2025-04-06 10:56:27,345 [ERROR] ❌ Error during classification: ❌ File not found: prompts/document_classification.txt
+2025-04-06 10:56:27,345 [INFO] Classified document as: None
+2025-04-06 10:56:30,347 [INFO] 📂 Loading and chunking document: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:30,568 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:30,568 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-06 10:56:30,569 [ERROR] ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:30,569 [ERROR] ❌ Failed to extract clauses from document: ❌ File not found: prompts/clause_extraction.txt
+Traceback (most recent call last):
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/clause_extractor.py", line 37, in extract_clauses
+    prompt_template = load_prompt_template(CONFIG.CLAUSE_EXTRACTION_PROMPT_PATH)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/utils/utils.py", line 21, in load_prompt_template
+    raise FileNotFoundError(f"❌ File not found: {file_path}")
+FileNotFoundError: ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:30,570 [INFO] Clauses extracted
+2025-04-06 10:56:33,571 [INFO] 📂 Loading and chunking document: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:33,772 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:33,773 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-06 10:56:33,773 [ERROR] ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:33,773 [ERROR] ❌ Failed to extract clauses from document: ❌ File not found: prompts/clause_extraction.txt
+Traceback (most recent call last):
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/clause_extractor.py", line 37, in extract_clauses
+    prompt_template = load_prompt_template(CONFIG.CLAUSE_EXTRACTION_PROMPT_PATH)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/utils/utils.py", line 21, in load_prompt_template
+    raise FileNotFoundError(f"❌ File not found: {file_path}")
+FileNotFoundError: ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:33,774 [ERROR] ❌ File not found: prompts/risk_analysis.txt
+2025-04-06 10:56:33,774 [ERROR] ❌ Risk detection failed: ❌ File not found: prompts/risk_analysis.txt
+2025-04-06 10:56:33,774 [ERROR] Risk detection failed: cannot unpack non-iterable NoneType object
+2025-04-06 10:56:33,775 [INFO] 📂 Loading and chunking document: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:33,983 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:33,983 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-06 10:56:33,984 [ERROR] ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:33,984 [ERROR] ❌ Failed to extract clauses from document: ❌ File not found: prompts/clause_extraction.txt
+Traceback (most recent call last):
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/clause_extractor.py", line 37, in extract_clauses
+    prompt_template = load_prompt_template(CONFIG.CLAUSE_EXTRACTION_PROMPT_PATH)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/muhammad/LexiAgent-AI-Powered-Autonomous-Legal-Document-Analyst/utils/utils.py", line 21, in load_prompt_template
+    raise FileNotFoundError(f"❌ File not found: {file_path}")
+FileNotFoundError: ❌ File not found: prompts/clause_extraction.txt
+2025-04-06 10:56:33,985 [ERROR] ❌ File not found: prompts/summarization.txt
+2025-04-06 10:56:33,985 [ERROR] ❌ Summarization failed: ❌ File not found: prompts/summarization.txt
+2025-04-06 10:56:34,191 [INFO] ✅ PDF loaded successfully: temp/Example-One-Way-Non-Disclosure-Agreement.pdf
+2025-04-06 10:56:34,192 [INFO] ✅ Text chunked into 5 chunks with size=1000, overlap=200
+2025-04-06 10:56:34,192 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-06 10:56:36,515 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 10:56:36,523 [INFO] 🤖 Querying LLM: qwen-2.5-32b
+2025-04-06 10:56:38,666 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 10:56:40,309 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 10:56:40,311 [INFO] Document and clauses summarized
