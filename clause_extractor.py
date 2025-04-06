@@ -85,11 +85,11 @@ def get_clause_extracted(file_path: str):
     parsed_results = [parse_json_safely(text, idx) for idx, text in enumerate(extracted) if parse_json_safely(text, idx)]
     merged_clauses = merge_clause_chunks(parsed_results)
     
-    return json.dumps(merged_clauses, indent=2)
+    # return json.dumps(merged_clauses, indent=2)
+    return merged_clauses
 
 # Sample Test
 if __name__ == "__main__":
-    file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-    merged_clauses = get_clause_extracted(file_path)
+    merged_clauses = get_clause_extracted(CONFIG.FILE_PATH)
     
     print("\n📌 Final Merged Clauses:\n", merged_clauses)
