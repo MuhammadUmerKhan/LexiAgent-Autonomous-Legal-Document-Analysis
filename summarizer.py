@@ -63,7 +63,7 @@ def get_doc_summary(file_path):
     {combined_summary}
     Final Summary:
     """
-    final_summary = llm.invoke(prompt)
+    final_summary = llm.invoke(final_prompt)
     
     return final_summary.content.strip()
 
@@ -76,12 +76,12 @@ def get_summary(file_path: str):
     clause_summary = summarize_contract(merged_clauses)
     doc_summary = get_doc_summary(file_path)
     
-    return json.dumps(clause_summary, indent=2), doc_summary
+    # return json.dumps(clause_summary, indent=2), doc_summary
+    return clause_summary, doc_summary
 
 if __name__ == "__main__":
 
-    file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-    clause_summary, doc_summary = get_summary(file_path)
+    clause_summary, doc_summary = get_summary(CONFIG.FILE_PATH)
     
     print("\n📝 Clause Summary Output:\n", json.dumps(clause_summary, indent=2))
     print("\n📝 Document Summary Output:\n", doc_summary)
