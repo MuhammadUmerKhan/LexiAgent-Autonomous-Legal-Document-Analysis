@@ -5,7 +5,7 @@ import logging
 # Adjust system path for imports
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from agent import build_graph
+from pdf_agent import build_graph
 
 # Set up logging
 logging.basicConfig(
