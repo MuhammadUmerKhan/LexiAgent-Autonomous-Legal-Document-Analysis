@@ -15,11 +15,11 @@ The **`config.py`** file is responsible for setting up and managing configuratio
    - Logs critical events, such as successful loading of configuration or errors if API keys are missing or constants are not set correctly.
 
 3. **API Key Management**:
-   - Loads essential API keys (Google Search, Groq API, etc.) from environment variables.
+   - Loads essential API keys (Groq API, etc.) from environment variables.
    - Provides error handling in case the keys are not found or improperly set.
 
 4. **Constants Definition**:
-   - Defines essential constants like `CHUNK_SIZE`, and `MAX_LENGTH` that govern the behavior of the application (e.g., chunking of data, number of results to consider, etc.).
+   - Defines essential constants like `CHUNK_SIZE`, and `MAX_LENGTH` that govern the behavior of the application (e.g., chunking of data, etc.).
 
 ---
 
