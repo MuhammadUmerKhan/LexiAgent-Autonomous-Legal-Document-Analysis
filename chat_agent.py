@@ -1,12 +1,9 @@
-import streamlit as st
-import os, logging
-from streaming import StreamHandler
-from typing import Dict, Any, TypedDict, Annotated
+import logging, json
+from typing import TypedDict, Annotated
 from langgraph.graph import StateGraph, END, START
 from langchain_core.messages import ToolMessage
 from langchain.tools import Tool
 from langgraph.graph.message import add_messages
-import json, utils.utils as utils
 from dotenv import load_dotenv
 from clause_extractor import get_clause_extracted
 from classify_documents import get_classified_doc
@@ -96,7 +93,7 @@ def route_tools(state: ChatState):
 
 # Build Chatbot Graph
 graph_builder = StateGraph(ChatState)
-llm = configure_llm()  # Initialize LLM from your config
+llm = configure_llm(MODEL_NAME="meta-llama/llama-4-scout-17b-16e-instruct")
 llm_with_tools = llm.bind_tools(tools)
 
 def chatbot(state: ChatState):
