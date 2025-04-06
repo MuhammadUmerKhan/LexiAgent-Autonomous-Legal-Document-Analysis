@@ -1,7 +1,6 @@
-import os, docx, pdfplumber, logging
-from typing import List, Tuple
+import os, docx, pdfplumber, logging, warnings
+from typing import List
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import warnings
 from config import config as CONFIG
 
 warnings.filterwarnings(action="ignore")
