@@ -24,7 +24,7 @@ def classify_document(text: str) -> Optional[str]:
         logging.info("🔍 Sending document to LLM for classification...")
 
         # Initialize Groq LLM with Qwen
-        llm = configure_llm()
+        llm = configure_llm(MODEL_NAME="qwen-2.5-32b")
 
         # Get LLM response
         response = llm.invoke(prompt)
