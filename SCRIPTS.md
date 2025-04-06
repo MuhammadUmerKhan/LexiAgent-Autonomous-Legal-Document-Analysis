@@ -67,7 +67,6 @@ Follow these steps to set up and run LexiAgent:
 2. **Install Dependencies**:
    Navigate to the project directory and install required packages:
    ```bash
-   cd <project-directory>
    pip install langchain-groq streamlit langgraph sentence-transformers pdfplumber python-docx
    ```
 
