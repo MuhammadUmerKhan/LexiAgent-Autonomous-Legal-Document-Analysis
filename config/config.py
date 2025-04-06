@@ -27,6 +27,7 @@ try:
     RISK_ANALYZER_PATH = os.path.join("prompts", "risk_analysis.txt")
     DOC_CLASSIFICATION_PATH = os.path.join("prompts", "document_classification.txt")
     DOC_SUMMARIZER_PATH = os.path.join("prompts", "summarization.txt")
+    FILE_PATH = os.path.join("data", "Example-One-Way-Non-Disclosure-Agreement.pdf")
 except FileNotFoundError as f:
     logging.error(f"❌ {f.filename} not found.")
 try:
