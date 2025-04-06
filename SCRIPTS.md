@@ -1,8 +1,3 @@
-Here's a professional, well-explained, clear, and structured README.md for the provided files, which form a comprehensive legal document analysis system called "LexiAgent." I've used emojis to enhance readability while maintaining a professional tone. The README assumes the files are part of a cohesive project with scripts for document loading, clause extraction, classification, summarization, risk analysis, and a Streamlit-based UI, along with a LangGraph workflow and chatbot functionality.
-
-Below is the Markdown content for your `README.md`:
-
-```markdown
 # 📑 Project Documentation: LexiAgent - Legal Document Analysis System
 
 ## 🌟 Overview
