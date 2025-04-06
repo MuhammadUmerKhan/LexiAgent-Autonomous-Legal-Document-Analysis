@@ -55,12 +55,11 @@ def get_clause_risks(file_path: str):
     merged_clauses = merge_clause_chunks(parsed_result)
     
     risks, raw_output = analyze_clause_risks(merged_clauses, CONFIG.RISK_ANALYZER_PATH)    
-    return json.dumps(risks, indent=2)
+    # return json.dumps(risks, indent=2)
+    return risks
 
 # Sample Test
 if __name__ == "__main__":
 
-    file_path = "./data/Example-One-Way-Non-Disclosure-Agreement.pdf"
-
-    risks = get_clause_risks(file_path)
+    risks = get_clause_risks(CONFIG.FILE_PATH)
     print("\n🛡️ Risk Detection Output:\n", risks)
