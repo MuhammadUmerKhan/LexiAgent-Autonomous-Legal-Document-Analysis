@@ -45,7 +45,7 @@ except:
     - **GROQ_API_KEY**: Used to interact with Langchain’s Groq service.
 - If any of these keys are missing or incorrectly set, an error is logged using `logging.error()`, with the message "⚠️ API KEYS not found or not set."
 
-##### 4. 📂 Files Included
+##### 3. 📂 Files Included
 
 This repository includes the following key components:
 
