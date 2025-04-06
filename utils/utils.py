@@ -23,7 +23,7 @@ def load_prompt_template(file_path: str) -> str:
     with open(file_path, "r") as f:
         return f.read()
     
-def configure_llm():
+def configure_llm(MODEL_NAME):
     """
     Configure LLM to run on Hugging Face Inference API (Cloud-Based).
     
@@ -33,11 +33,11 @@ def configure_llm():
 
     # Sidebar to select LLM
     try:
-        logging.info(f"🤖 Querying LLM: {CONFIG.MODEL_NAME}")
+        # logging.info(f"🤖 Querying LLM: {MODEL_NAME}")
         llm = ChatGroq(
             temperature=0,
             groq_api_key=CONFIG.GROQ_API_KEY,
-            model_name=CONFIG.MODEL_NAME
+            model_name=MODEL_NAME
         )
         return llm
     except Exception as e:
