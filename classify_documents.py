@@ -43,8 +43,7 @@ def get_classified_doc(file: str):
 
 if __name__ == "__main__":
     # Sample test
-    file_path = "./data/attention paper.pdf"
-    result = get_classified_doc(file_path)
+    result = get_classified_doc(CONFIG.FILE_PATH)
     
     if result:
         print(f"📄 Document Type: {result}")
