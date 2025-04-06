@@ -1,9 +1,5 @@
 # 📑 Documentation `utils.py`: Document Classifier and Chat Application
 
-## 🌟 Overview
-
-This contains a Python application built with Streamlit that integrates language models (LLMs) and embedding models to create a chat-based interface for document classification, question answering, and text processing. The application uses the `langchain_groq` library to interact with the Grok API, `SentenceTransformer` for embeddings, and Streamlit for a user-friendly web interface. It includes logging, prompt loading, and session management to ensure robust functionality and user interaction. 🚀
-
 ## 📂 Files Included
 
 This repository includes the following key components:
