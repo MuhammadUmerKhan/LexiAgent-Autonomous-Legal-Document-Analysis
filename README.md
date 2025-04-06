@@ -1,4 +1,4 @@
-# 📑 Project Title: LexiAgent – AI-Powered Autonomous Legal Document Agent
+# 📑 LexiAgent – AI-Powered Autonomous Legal Document Agent
 
 ![](https://redblink.com/wp-content/uploads/2024/11/ai-agents-for-legal-document-management.png?x65848)
 
