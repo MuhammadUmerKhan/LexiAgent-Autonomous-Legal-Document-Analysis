@@ -1,0 +1,9 @@
+langchain_groq
+python-dotenv
+langchain-community
+sentence-transformers
+streamlit
+langgraph
+langchain
+langchain-core
+json-fix
