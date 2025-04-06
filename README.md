@@ -46,7 +46,7 @@ LexiAgent addresses the challenges of manual legal document review, such as comp
      [LLM Agent Workflow - LangGraph]
              |
     ┌────────┼─────────┬────────────────────┐────────────┐
-    ▼        ▼         ▼                    ▼           ▼
+    ▼        ▼         ▼                    ▼            ▼
 [Classification] [Clause Extraction] [Summarization] [Risk Analysis]
              |
              v
