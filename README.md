@@ -1,6 +1,6 @@
 # 📑 LexiAgent – AI-Powered Autonomous Legal Document Agent
 
-![](https://redblink.com/wp-content/uploads/2024/11/ai-agents-for-legal-document-management.png?x65848)
+![](https://1719204.fs1.hubspotusercontent-na1.net/hubfs/1719204/RJY%20Socials_Legal%20Doc_FB.jpg)
 
 ## 🌟 Overview
 
