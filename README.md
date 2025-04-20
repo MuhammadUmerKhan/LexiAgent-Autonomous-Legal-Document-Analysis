@@ -65,8 +65,8 @@ LexiAgent addresses the challenges of manual legal document review, such as comp
 
 | Task | Model |
 |------|-------|
-| 🧾 Classification | `qwen/qwen2-72b-instruct` |
-| 📜 Clause Extraction | `qwen/qwen2-72b-instruct` |
+| 🧾 Classification | `qwen-qwq-32b` |
+| 📜 Clause Extraction | `qwen-qwq-32b` |
 | ✂️ Summarization | `meta-llama/llama-4-scout-17b-16e-instruct` |
 | ⚠️ Risk Analysis | `meta-llama/llama-4-scout-17b-16e-instruct` |
 | 🤖 Agent Reasoning | `meta-llama/llama-4-scout-17b-16e-instruct` |
@@ -103,7 +103,7 @@ LexiAgent leverages a robust stack of modern technologies to achieve its goals. 
 | Category | Technology |
 |---------|------------|
 | 🔄 **Agent Workflow** | [LangGraph](https://www.langgraph.dev/) |
-| 🧠 **LLMs** | Qwen1.5-72B-Instruct, LLaMA 4 Scout 17B |
+| 🧠 **LLMs** | qwen-qwq-32b, LLaMA 4 Scout 17B |
 | 🧩 **Embedding Models** | BGE or E5 embeddings |
 | 📚 **Vector Database (optional for RAG)** | FAISS or ChromaDB |
 | 🎯 **Prompt Engineering** | Custom prompts per tool/task |
@@ -128,13 +128,13 @@ LexiAgent operates through a multi-step process, orchestrated by LangGraph and e
 - **File**: `classify_documents.py`
 - **Process**:
   - The full text of the document is sent to an LLM (configured via `configure_llm` in `utils.utils.py`) using a prompt from `prompts/document_classification.txt`.
-  - `classify_document()` uses the "qwen-2.5-32b" model to determine the document type (e.g., "Non Disclosure Agreement") and returns it as a string.
+  - `classify_document()` uses the "qwen-qwq-32b" model to determine the document type (e.g., "Non Disclosure Agreement") and returns it as a string.
   - Logs track the classification process and any errors.
 
 ### 3. Clause Extraction
 - **File**: `clause_extractor.py`
 - **Process**:
-  - Chunks of the document are processed by an LLM (e.g., "qwen-2.5-32b") using a prompt from `prompts/clause_extraction.txt`.
+  - Chunks of the document are processed by an LLM (e.g., "qwen-qwq-32b") using a prompt from `prompts/clause_extraction.txt`.
   - `extract_clauses()` extracts clauses like Termination, Confidentiality, etc., and `merge_clause_chunks()` combines results, filling missing clauses with "Not Found."
   - `parse_json_safely()` ensures JSON outputs are valid, using `json_fix` if necessary.
   - The final output is a JSON object mapping clause names to their text or "Not Found."
@@ -186,8 +186,8 @@ LexiAgent operates through a multi-step process, orchestrated by LangGraph and e
 Here’s a breakdown of each file and its role:
 
 - **`document_loader.py`**: Loads and chunks documents (PDF, DOCX, TXT) using `pdfplumber`, `python-docx`, and `RecursiveCharacterTextSplitter`. Logs to `logs/document_classifier.log`.
-- **`clause_extractor.py`**: Extracts legal clauses using LLMs and merges chunked results. Uses `qwen-2.5-32b`. Logs to `logs/clause_extractor.log`.
-- **`classify_documents.py`**: Classifies documents into types (e.g., NDA) using `qwen-2.5-32b`. Logs to `logs/document_classifier.log`.
+- **`clause_extractor.py`**: Extracts legal clauses using LLMs and merges chunked results. Uses `qwen-qwq-32b`. Logs to `logs/clause_extractor.log`.
+- **`classify_documents.py`**: Classifies documents into types (e.g., NDA) using `qwen-qwq-32b`. Logs to `logs/document_classifier.log`.
 - **`summarizer.py`**: Summarizes documents and clauses using `meta-llama/llama-4-scout-17b-16e-instruct`. Logs to `logs/summarizer.log`.
 - **`risk_detector.py`**: Analyzes clause risks using `meta-llama/llama-4-scout-17b-16e-instruct`. Logs to `logs/risk_detector.log`.
 - **`pdf_agent.py`**: Orchestrates the workflow using LangGraph. Logs to `logs/langgraph.log`.
