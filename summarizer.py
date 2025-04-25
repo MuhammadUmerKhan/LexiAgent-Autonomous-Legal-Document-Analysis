@@ -51,7 +51,7 @@ def get_doc_summary(file_path):
         {chunk}    
         Bullet Point Summary:
         """
-        llm = configure_llm()
+        llm = configure_llm("meta-llama/llama-4-scout-17b-16e-instruct")
         summary = llm.invoke(prompt)
         chunk_summaries.append(summary.content.strip())
     
