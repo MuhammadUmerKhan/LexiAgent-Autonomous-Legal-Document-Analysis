@@ -82,7 +82,7 @@ def detect_risks(state: State) -> State:
 
 def summarize(state: State) -> State:
     try:
-        state["clause_summary"], state["doc_summary"],  = get_summary(state["file_path"])
+        state["clause_summary"], state["doc_summary"] = get_summary(state["file_path"])
         logger.info("Document and clauses summarized")
         time.sleep(5)
         return state
