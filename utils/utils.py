@@ -2,7 +2,6 @@ from langchain_groq import ChatGroq
 from config import config as CONFIG
 import streamlit as st
 from sentence_transformers import SentenceTransformer
-from langchain_community.embeddings import HuggingFaceEmbeddings
 import os, logging
 
 os.makedirs("logs", exist_ok=True)
