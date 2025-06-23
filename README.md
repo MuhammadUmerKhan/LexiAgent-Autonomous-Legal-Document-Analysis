@@ -1,4 +1,4 @@
-# 📑 LexiAgent – AI-Powered Autonomous Legal Document Agent
+# 📑 LexiAgent: Autonomous Legal Document Analysis
 
 ![](https://1719204.fs1.hubspotusercontent-na1.net/hubfs/1719204/RJY%20Socials_Legal%20Doc_FB.jpg)
 
