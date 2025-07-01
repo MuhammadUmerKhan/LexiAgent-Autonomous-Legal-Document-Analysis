@@ -1,0 +1,14 @@
+● LexiAgent: Autonomous Legal Document Analysis
+• Challenge: Manual review of legal documents for clause extraction and risk detection is slow, costly, and requires
+            expert-level legal knowledge.
+• Action:
+    • Built an autonomous multi-agent system using LangGraph, LangChain, and LLMs (Qwen, LLaMA 4) to mimic legal
+    reasoning workflows.
+    • Developed modular components for document classification, clause extraction, risk detection, and summarization.
+    • Combined semantic search with rule-based logic to detect critical clauses (e.g., indemnity, liability, termination).
+    • Integrated natural language querying, enabling users to interact with and extract insights from complex legal
+    content.
+• Result:
+    • Automated 80% of legal review, cutting time from hours to minutes with explainable outputs.
+    • Delivered a production-ready agent showcasing advanced LLM orchestration, tool integration, and prompt
+    engineering. [Live Demo](https://lexiagent-ai-powered-autonomous-legal-document-analyst.streamlit.app/?embed_options=dark_theme)
