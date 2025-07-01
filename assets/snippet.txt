@@ -1,4 +1,4 @@
-● LexiAgent: Autonomous Legal Document Analysis
+● LexiAgent: Autonomous Legal Document Analysis                                                                        Personal Project | 2025
 • Challenge: Manual review of legal documents for clause extraction and risk detection is slow, costly, and requires
             expert-level legal knowledge.
 • Action:
