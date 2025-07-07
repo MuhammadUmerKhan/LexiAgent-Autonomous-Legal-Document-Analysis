@@ -244,47 +244,22 @@ streamlit run streamlit_app.py
 Open your browser to `http://localhost:8501` to use LexiAgent.
 
 ## 🐳 **Dockerization & Deployment**
-
-You can easily run this project using Docker and share or deploy it from Docker Hub.
-
-### ✅ **Build the Docker Image**
-
-Make sure your `Dockerfile` is correctly set up. Then run:
-
-```bash
-docker build -t muhammadumerkhan/lexi-legal-doc-analyzer .
-```
-
-### 🚀 **Run the Docker Container**
-
-```bash
-docker run -p 8501:8501 muhammadumerkhan/lexi-legal-doc-analyzer
-```
-
-> This will launch the Streamlit/ FastAPI interface on `http://localhost:8501` depending on your app entrypoint.
-
-### 📤 **Push to Docker Hub**
-
-First, log in to Docker:
-
-```bash
-docker login
-```
-
-Then push your image:
-
-```bash
-docker push muhammadumerkhan/lexi-legal-doc-analyzer
-```
-
-### 📥 **Pull & Run from Docker Hub**
-
-Anyone can pull and run the app using:
-
-```bash
-docker pull muhammadumerkhan/lexi-legal-doc-analyzer
-docker run -p 8501:8501 muhammadumerkhan/lexi-legal-doc-analyzer
-```
+- **Build**:
+  ```bash
+  docker build -t muhammadumerkhan/lexi-legal-doc-analyzer .
+  ```
+- **Run**:
+  ```bash
+  docker run -p 8501:8501 muhammadumerkhan/lexi-legal-doc-analyzer
+  ```
+- **Push**:
+  ```bash
+  docker push muhammadumerkhan/lexi-legal-doc-analyzer
+  ```
+- **Pull**:
+  ```bash
+  docker pull muhammadumerkhan/lexi-legal-doc-analyzer
+  ```
 
 ## 📝 Usage
 
